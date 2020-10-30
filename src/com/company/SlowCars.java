@@ -2,8 +2,10 @@ package com.company;
 
 public class SlowCars extends Cars {
 
-    public SlowCars() {
 
+    public SlowCars() {
+        percentageHappening = 10;
+        speed = 13;
     }
 
     @Override

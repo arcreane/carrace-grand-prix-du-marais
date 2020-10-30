@@ -24,7 +24,6 @@ public class Menu {
             //SCAN FOR USE MAIN MENU
             Scanner keyInputByUser = new Scanner(System.in);
             String keyResultInputUser = keyInputByUser.nextLine();
-            System.out.println(keyResultInputUser);
 
 
             //CHECK USER INPUT
@@ -32,13 +31,15 @@ public class Menu {
                 if (keyResultInputUser.equals("1")) {
                     Color color = new Color();
                     ScannerColor scannerColor = new ScannerColor();
-                    Cars slowCars = new SlowCars();
+                    Race race = new Race(new FastCars());
+                    race.GameLoop();
                     userIsOnMenu = false;
 
                 } else if (keyResultInputUser.equals("2")) {
                     Color color = new Color();
                     ScannerColor scannerColor = new ScannerColor();
-                    Cars fastCar = new FastCars();
+                    Race race = new Race(new SlowCars());
+                    race.GameLoop();
                     userIsOnMenu = false;
 
                 } else if (keyResultInputUser.equals("3")) {
@@ -54,7 +55,3 @@ public class Menu {
     }
 
 }
-
-
-
-

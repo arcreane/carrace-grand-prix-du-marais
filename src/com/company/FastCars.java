@@ -1,8 +1,11 @@
+
 package com.company;
 
 public class FastCars extends Cars {
+
     public FastCars() {
         percentageHappening = 35;
+        speed = 35;
     }
 
     @Override
@@ -10,3 +13,4 @@ public class FastCars extends Cars {
         System.out.println("Je suis une voiture rapide");
     }
 }
+

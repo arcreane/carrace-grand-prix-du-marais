@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <template>
   <input-field default="com.company">IJ_BASE_PACKAGE</input-field>
+=======
+<template>
+  <input-field default="com.company">IJ_BASE_PACKAGE</input-field>
+>>>>>>> REFACTOR CODE PROF
 </template>
